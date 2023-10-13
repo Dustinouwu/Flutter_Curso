@@ -1,5 +1,6 @@
 import 'package:curso_flutter_n1/app/modules/apirest/cap7.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap8.dart';
+import 'package:curso_flutter_n1/app/modules/apirest/cap9.dart';
 import 'package:flutter/material.dart';
 import 'package:curso_flutter_n1/app/modules/login/cap5.dart';
 import 'package:curso_flutter_n1/app/modules/navigation/cap6.dart';
@@ -69,6 +70,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )),
               child: const Text('Listas'),
+            ),
+            const Text('Go to Petición Http'),
+            ElevatedButton(
+              onPressed: (() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => const ApiHttp()),
+                    ),
+                  )),
+              child: const Text('Petición Http'),
             )
           ],
         ),
