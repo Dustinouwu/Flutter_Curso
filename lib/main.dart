@@ -1,9 +1,10 @@
+import 'package:curso_flutter_n1/app/modules/animatedContainer/animated.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap7.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap8.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap9.dart';
 import 'package:curso_flutter_n1/app/modules/navBar/navBarCap.dart';
+import 'package:curso_flutter_n1/app/modules/swiper/swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:curso_flutter_n1/app/modules/login/cap5.dart';
 import 'package:curso_flutter_n1/app/modules/navigation/cap6.dart';
 
 void main() {
@@ -91,6 +92,26 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )),
               child: const Text('Nav Bar'),
+            ),
+            const Text('Animated Container'),
+            ElevatedButton(
+              onPressed: (() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) =>  const AnimatedCap()),
+                    ),
+                  )),
+              child: const Text('Animated Container'),
+            ),
+             const Text('Swipe Carrusel'),
+            ElevatedButton(
+              onPressed: (() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) =>  const SwiperPage()),
+                    ),
+                  )),
+              child: const Text('Swipper Carrusel'),
             ),
           ],
         ),
