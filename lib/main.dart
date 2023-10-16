@@ -2,6 +2,7 @@ import 'package:curso_flutter_n1/app/modules/animatedContainer/animated.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap7.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap8.dart';
 import 'package:curso_flutter_n1/app/modules/apirest/cap9.dart';
+import 'package:curso_flutter_n1/app/modules/dataPersistence/dataPersistence.dart';
 import 'package:curso_flutter_n1/app/modules/navBar/navBarCap.dart';
 import 'package:curso_flutter_n1/app/modules/swiper/swiper.dart';
 import 'package:flutter/material.dart';
@@ -112,6 +113,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )),
               child: const Text('Swipper Carrusel'),
+            ),
+             const Text('Data Persistence'),
+            ElevatedButton(
+              onPressed: (() => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) =>  const DataPersistence()),
+                    ),
+                  )),
+              child: const Text('Data Persistence'),
             ),
           ],
         ),
